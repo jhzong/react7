@@ -1,0 +1,7 @@
+/* 외부링크의 장점 : 기존 css문법과 동일 */
+
+.main{
+    text-align: left;
+    background-color: aqua;
+    font-size: 50px;
+}
