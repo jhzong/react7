@@ -5,12 +5,11 @@
     padding: 20px;
     margin: 0 auto;
 }
-h2{
-    text-align: center;
+h2{text-align: center;}
+form{
+    margin: 20px 0 50px;
+    border: 1px solid rgb(104, 98, 98);
+    padding: 10px;
 }
-.card{
-    margin: 20px auto;
-}
-.btn{
-    margin-right: 10px;
-}
+.card{margin: 20px 0;}
+.btn{margin-right: 10px;}
