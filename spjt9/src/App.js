@@ -14,8 +14,19 @@ function App() {
   
   // 화면 갱신될 때 실행되는 함수
   // axios를 사용해 서버에 있는 데이터 호출
+  // post 방식 전송
+  // useEffect(()=>{
+  //   axios.post('http://localhost:8000/member/userInsert/',{params:{id:'aaa',name:'홍길자'}})
+  //   .then(res => {
+  //     console.log('json데이터 : ',res)
+  //     setUsers(res.data.arrey)
+  //   })
+  // },[]// [] : 최초 한번만 실행
+  // )//useEffect약식
+  
+  // get 방식 전송
   useEffect(()=>{
-    axios.get('http://localhost:8000/member/userAll/',{id:'aaa'})
+    axios.get('http://localhost:8000/member/userAll/',{params:{id:'aaa',name:'홍길자'}})
     .then(res => {
       console.log('json데이터 : ',res)
       setUsers(res.data.arrey)
