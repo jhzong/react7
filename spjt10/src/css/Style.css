@@ -1,0 +1,9 @@
+.navbar{margin-bottom: 40px;}
+.Root{
+    width: 500px;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid black;
+    
+}
+.Root h2{text-align: center;}
