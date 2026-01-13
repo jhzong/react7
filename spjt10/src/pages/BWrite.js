@@ -2,8 +2,9 @@ import React from "react";
 
 const BWrite = () => {
     return(
-        <>
-        </>
+        <div className="Root">
+            <h2>게시판글쓰기</h2>
+        </div>
     )
 };
 

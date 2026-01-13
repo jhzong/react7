@@ -3,7 +3,11 @@
     width: 500px;
     height: 100%;
     padding: 20px;
+    margin: 0 auto;
     border: 1px solid black;
     
 }
 .Root h2{text-align: center;}
+.Root button{margin-right: 10px;}
+.Root .card{margin-bottom: 10px;}
+.Root .d-flex{margin-top: 50px;}

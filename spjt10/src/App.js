@@ -1,17 +1,24 @@
 import './App.css';
 import './css/Style.css'
 import Nav from './comp/Nav';
-import { BrowserRouter, Router, Route } from 'react-router-dom';
+import { Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import BList from './pages/BList';
+import BWrite from './pages/BWrite';
+import BView from './pages/BView';
+import UserList from './pages/UserList';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
       <Nav/>
-      <div className="Root">
-        <h2>메인페이지</h2>
-      </div>
-      </BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/BList' element={<BList/>}/>
+        <Route path='/BWrite' element={<BWrite/>}/>
+        <Route path='/BView' element={<BView/>}/>
+        <Route path='/UserList' element={<UserList/>}/>
+      </Routes>
     </>
   );
 }

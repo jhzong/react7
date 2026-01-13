@@ -1,11 +1,11 @@
 import React from "react";
 
-const Home = () => {
+const BView = () => {
     return(
         <div className="Root">
-            <h2>메인페이지</h2>
+            <h2>상세보기</h2>
         </div>
     )
 };
 
-export default Home;
+export default BView;
