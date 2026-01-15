@@ -12,6 +12,7 @@ const BList = () => {
         // {'bno':'2','btitle':'게시글 제목입니다.2','bcontent':'게시글 내용입니다.2'},
         // {'bno':'3','btitle':'게시글 제목입니다.3','bcontent':'게시글 내용입니다.3'}
     ])//useState
+    const[flag,setFlag]=useState(false)//삭제 후 갱신
 
     useEffect(
         ()=>{
@@ -23,7 +24,7 @@ const BList = () => {
                 console.log('넘어온 데이터:',res.data.list)
                 setBoards(res.data.list)
             })
-        },[]
+        },[flag]//flag:갱신
     )
 
     const deleteBtn = (bno) => {
@@ -32,6 +33,7 @@ const BList = () => {
             .then(res=>{
                 alert(`${bno}번 게시글을 삭제합니다.`)
                 navigate('/BList')
+                setFlag(!flag)//삭제 후 갱신
             })
         }
     }
